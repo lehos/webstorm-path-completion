@@ -1,7 +1,6 @@
 # About
 This repo reproduces bug in webstorm 2021.3 when there is no completion in import paths
 
-
 #### Steps to reproduce:
 - Install npm deps
 - Open project in webstorm 2021.3 beta (or 2021.2)
@@ -10,14 +9,23 @@ This repo reproduces bug in webstorm 2021.3 when there is no completion in impor
 
 #### Actual result:
 
-"No suggestions" in completion popup (2021.3.beta.png)
+"No suggestions" in completion popup
+
+![2021.3](2021.3.png)
 
 #### Excepted result:
 
-List of subfolders (2021.1.3.png)
+List of subfolders
 
+![2021.3](2021.1.png)
 
-### Install
+#### Notes
+
+I have tested it on mac and windows, same problems. 
+
+Also note that on clean install (no caches, no .idea folder etc), folders completion works for some time, but after a while bug appears again even on older IDE versions
+
+# Install
     npm i
 
 ### Run
